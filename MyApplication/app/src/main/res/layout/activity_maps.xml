@@ -1,0 +1,232 @@
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/map"-->
+<!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--class="com.google.android.gms.maps.SupportMapFragment"-->
+<!--tools:context="project.cis350.upenn.edu.wywg.MapsActivity">-->
+
+<!--&lt;!&ndash;<android.support.v7.widget.Toolbar>&ndash;&gt;-->
+<!--&lt;!&ndash;android.id="@+id/toolbar"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+<!--&lt;!&ndash;android:background="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;</android.support.v7.widget.Toolbar>&ndash;&gt;-->
+
+
+
+<!--<TextView-->
+<!--android:id="@+id/latlongLocation"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_alignParentLeft="true"-->
+<!--android:layout_alignRight="@+id/textedit"-->
+<!--android:background="#ff058fff"-->
+<!--android:gravity="bottom"-->
+<!--android:paddingBottom="5dp"-->
+<!--android:paddingLeft="5dp"-->
+<!--android:paddingRight="5dp"-->
+<!--android:paddingTop="5dp"-->
+<!--android:textColor="#ffffffff" />-->
+
+<!--<EditText-->
+<!--android:id="@+id/textedit"-->
+<!--android:layout_width="250dp"-->
+<!--android:layout_height="68dp"-->
+<!--android:layout_alignParentLeft="true"-->
+<!--android:layout_alignParentTop="true"-->
+<!--android:layout_marginLeft="18dp"-->
+<!--android:layout_marginTop="14dp"-->
+<!--android:hint="Search Location"-->
+<!--android:textColor="@android:color/black"-->
+<!--android:background="@android:color/white" >-->
+<!--</EditText>-->
+
+<!--&lt;!&ndash;<android.support.v7.widget.SearchView&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/sv"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="250dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="68dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="14dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:hint="Search Location"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;android:background="@android:color/white" >&ndash;&gt;-->
+<!--&lt;!&ndash;</android.support.v7.widget.SearchView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<android.support.v7.widget.SearchView&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/sv"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="250dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="68dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="14dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:hint="Search Location"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;android:background="@android:color/white" >&ndash;&gt;-->
+<!--&lt;!&ndash;</android.support.v7.widget.SearchView>&ndash;&gt;-->
+
+<!--<Button-->
+<!--android:id="@+id/button1"-->
+<!--android:layout_width="80dp"-->
+<!--android:layout_height="68dp"-->
+<!--android:layout_marginLeft="275dp"-->
+<!--android:layout_marginTop="14dp"-->
+<!--android:text="Enter"-->
+<!--android:layout_alignBaseline="@+id/textedit"-->
+<!--android:layout_alignBottom="@+id/textedit"-->
+<!--android:layout_alignRight="@+id/textedit" />-->
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_alignParentBottom="false"-->
+<!--android:orientation="horizontal">-->
+
+<!--<Button-->
+<!--android:id="@+id/btnListView"-->
+<!--android:layout_width="50dp"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="500dp"-->
+<!--android:layout_weight="0.5"-->
+<!--android:onClick="toLocationsList"-->
+<!--android:text="List of Locations"-->
+<!--android:layout_alignBaseline="@+id/textedit"-->
+<!--android:layout_alignBottom="@+id/textedit"-->
+<!--android:layout_alignRight="@+id/textedit" />-->
+
+<!--<Button-->
+<!--android:id="@+id/userListView"-->
+<!--android:layout_width="50dp"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_weight="0.5"-->
+<!--android:layout_marginTop="500dp"-->
+<!--android:onClick="toUsersList"-->
+<!--android:text="List of Users"-->
+<!--android:layout_alignBaseline="@+id/textedit"-->
+<!--android:layout_alignBottom="@+id/textedit"-->
+<!--android:layout_alignRight="@+id/textedit" />-->
+
+<!--<Button-->
+<!--android:id="@+id/recommendations"-->
+<!--android:layout_width="50dp"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_weight="0.5"-->
+<!--android:layout_marginTop="500dp"-->
+<!--android:onClick="toUsersList"-->
+<!--android:text="Recommendations"-->
+<!--android:layout_alignBaseline="@+id/textedit"-->
+<!--android:layout_alignBottom="@+id/textedit"-->
+<!--android:layout_alignRight="@+id/textedit" />-->
+<!--</LinearLayout>-->
+<!--</fragment>-->
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="project.cis350.upenn.edu.wywg.MapsActivity">
+
+
+
+        <TextView
+            android:id="@+id/latlongLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textedit"
+            android:background="#ff058fff"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/NiceButton"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="425dp"
+            android:text="My Location"
+            android:layout_alignBaseline="@+id/textedit"
+            android:layout_alignBottom="@+id/textedit"
+            android:layout_alignRight="@+id/textedit" />
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+        <!--<EditText-->
+            <!--android:id="@+id/textedit"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:layout_marginTop="14dp"-->
+            <!--android:hint="Search Location"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:background="@android:color/white" >-->
+        <!--</EditText>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button1"-->
+            <!--style="@style/NiceButton"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="275dp"-->
+            <!--android:layout_marginTop="14dp"-->
+            <!--android:text="Enter"-->
+            <!--android:layout_alignBaseline="@+id/textedit"-->
+            <!--android:layout_alignBottom="@+id/textedit"-->
+            <!--android:layout_alignRight="@+id/textedit" />-->
+
+
+            <Button
+                android:id="@+id/recommendations"
+                style="@style/NiceButton"
+                android:layout_width="140dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="425dp"
+                android:onClick="toUsersList"
+                android:text="Recommendations"
+                android:layout_alignBaseline="@+id/textedit"
+                android:layout_alignBottom="@+id/textedit"
+                android:layout_alignRight="@+id/textedit" />
+
+    </fragment>
+
+    <!-- Side navigation drawer UI -->
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/traceroute_rootview"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/default_image" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Name"
+        android:textColor="#878787"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/edit_pic"
+        style="@style/NiceButton"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Change Photo" />
+
+    <EditText
+        android:id="@+id/edit_Email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Email:"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_number"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Phone Number:"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edit_introduction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Self Introduction:"
+        android:inputType="textPersonName" />
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageToUpload"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:layout_width="10dp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/doneButton"
+            android:text="Done"
+            style="@style/NiceButton"
+            android:layout_gravity="start"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="30dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/NiceButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addUser"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint=""/>
+
+
+</LinearLayout>
+

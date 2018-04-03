@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string-array name="locationTypes">
+            <item>Default</item>
+            <item>Natural View</item>
+            <item>Historical Attractions</item>
+            <item>Modern City</item>
+            <item>Yummy Food</item>
+            <item>Others</item>
+        </string-array>
+
+        <string-array name="travelPurposes">
+            <item>Default</item>
+            <item>Sightseeing</item>
+            <item>Vacation</item>
+            <item>Outdoor Sports</item>
+            <item>Others</item>
+        </string-array>
+    </resources>

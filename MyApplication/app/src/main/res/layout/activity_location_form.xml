@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/traceroute_rootview"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Location"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDescription"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Description"/>
+
+    <EditText
+        android:id="@+id/edit_journal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Journal"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Estimated Cost of Trip"
+            android:ems="10"
+            android:id="@+id/etCost"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioBeenOrToGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbRating" />
+
+        <RadioButton
+            android:id="@+id/radioBeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_been"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioToGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_to_go" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageToUpload"
+        android:layout_height="10dp"
+        android:layout_width="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Where to go?"
+            android:id="@+id/wheretogo"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="What to do?"
+            android:id="@+id/whattodo"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/locationTypes"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:entries="@array/locationTypes"
+            android:spinnerMode="dropdown" />
+
+
+        <Spinner
+            android:id="@+id/TravelPurpose"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:entries="@array/travelPurposes"
+            android:spinnerMode="dropdown" />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/add_user_button"
+        android:text="Add\n Users"
+        style="@style/NiceButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="30dp"/>
+    <Button
+        android:id="@+id/add_pic_button"
+        style="@style/NiceButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Add Pictures"
+        android:layout_margin="10dp" />
+        <!--android:background="@color/colorPrimaryDark"-->
+
+        <!--android:textColor="#fff"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_gravity="bottom" -->
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/NiceButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Add Location"
+            android:textColor="#fff"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="10dp" />
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:elevation="4dp"-->
+            <!--android:paddingLeft="70dp"-->
+            <!--android:paddingRight="70dp"-->
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addUser"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint=""/>
+
+
+</LinearLayout>
+
